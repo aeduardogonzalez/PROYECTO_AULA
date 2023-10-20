@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class frmSession : Form
+    public partial class frmCrearSesion : Form
     {
-        public frmSession()
+        public frmCrearSesion()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void label7_Click(object sender, EventArgs e)
         {
 
         }
