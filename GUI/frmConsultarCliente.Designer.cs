@@ -187,7 +187,7 @@
             this.puntuacion});
             this.dataGridView1.Location = new System.Drawing.Point(0, 198);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(950, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(950, 228);
             this.dataGridView1.TabIndex = 32;
             // 
             // cedula
