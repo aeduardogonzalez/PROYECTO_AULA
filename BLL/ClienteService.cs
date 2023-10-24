@@ -23,7 +23,7 @@ namespace BLL
         public String GuardarRegistros(Cliente cliente)
         {
             if (cliente.Cedula == null || cliente.Nombre == null || cliente.Apellido == null
-                || cliente.Ciudad == null || cliente.Direccion == null || cliente.Edad == 0
+                || cliente.Ciudad == null || cliente.Direccion == null || cliente.Fecha_Nacimiento == null
                 || cliente.Puntuacion == 0 || cliente.Genero == ' ' || cliente.Estado == ' ')
             {
                 return $"Campos nulos";

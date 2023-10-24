@@ -52,7 +52,7 @@ namespace DAL
             p.Apellido = linea.Split(';')[2];
             p.Ciudad = linea.Split(';')[3];
             p.Direccion = linea.Split(';')[4];
-            p.Edad = int.Parse(linea.Split(';')[5]);
+            p.Fecha_Nacimiento = DateTime.Parse(linea.Split(';')[5]);
             p.Puntuacion = int.Parse(linea.Split(';')[6]);
             p.Genero = char.Parse(linea.Split(';')[7]);
             p.Estado = char.Parse(linea.Split(';')[8]);
