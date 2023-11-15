@@ -1,0 +1,2 @@
+C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\CLON PROYECTO DE AULA\PROYECTO_AULA\DAL-ORACLE\obj\Debug\DAL-ORACLE.csproj.AssemblyReference.cache
+C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\CLON PROYECTO DE AULA\PROYECTO_AULA\DAL-ORACLE\obj\Debug\DAL-ORACLE.csproj.CoreCompileInputs.cache

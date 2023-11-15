@@ -1,0 +1,2 @@
+C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\CLON PROYECTO DE AULA\PROYECTO_AULA\BLL-ORACLE\obj\Debug\BLL-ORACLE.csproj.AssemblyReference.cache
+C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\CLON PROYECTO DE AULA\PROYECTO_AULA\BLL-ORACLE\obj\Debug\BLL-ORACLE.csproj.CoreCompileInputs.cache

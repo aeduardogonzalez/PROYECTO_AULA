@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using ENTITY;
 using Oracle.ManagedDataAccess.Client;
 
-
 namespace DAL_ORACLE
 {
     public class BaseDatosOracle
