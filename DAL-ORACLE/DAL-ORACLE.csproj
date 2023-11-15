@@ -76,7 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseDatosOracle.cs" />
-    <Compile Include="PrestamistaRepositoryOracle.cs" />
+    <Compile Include="ClienteRepositoryOracle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

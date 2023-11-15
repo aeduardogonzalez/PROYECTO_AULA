@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 
 namespace DAL_ORACLE
 {
-    internal class PrestamistaRepositoryOracle : BaseDatosOracle
+    internal class ClienteRepositoryOracle : BaseDatosOracle
     {
 
     }
