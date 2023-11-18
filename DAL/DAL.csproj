@@ -42,8 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseDatos.cs" />
-    <Compile Include="ClienteRepository2.cs" />
-    <Compile Include="PrestamistaRepository2.cs" />
+    <Compile Include="ClienteRepository.cs" />
+    <Compile Include="PrestamistaRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

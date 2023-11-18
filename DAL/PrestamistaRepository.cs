@@ -6,12 +6,11 @@ using System.Security.Cryptography.X509Certificates;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
-using DAL_ORACLE;
 using ENTITY;
 
 namespace DAL
 {
-    public class PrestamistaRepository2 : BaseDatos
+    public class PrestamistaRepository : BaseDatos
     {
         public string RegistrarPrestamista(Prestamista prestamista)
         {

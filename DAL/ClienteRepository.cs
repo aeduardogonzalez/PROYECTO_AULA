@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using ENTITY;
 
-namespace DAL_ORACLE
+namespace DAL
 {
-    public class ClienteRepository2 : BaseDatos
+    public class ClienteRepository : BaseDatos
     {
-        public ClienteRepository2() : base()
+        public ClienteRepository() : base()
         {
 
         }

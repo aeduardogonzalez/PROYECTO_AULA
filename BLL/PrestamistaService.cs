@@ -10,23 +10,12 @@ namespace BLL
 {
     public class PrestamistaService
     {
-        private PrestamistaRepository prestamistaRepository = null;
-        
-        public PrestamistaService()
+        DAL.PrestamistaRepository repo = new PrestamistaRepository();
+     
+        public string RegistrarCliente(Prestamista prestamista)
         {
-            prestamistaRepository = new PrestamistaRepository();
-        }
-
-        public String GuardarRegistros(Prestamista prestamista)
-        {
-            if (prestamista.CedulaPrestamista == null || prestamista.NombrePrestamista == null
-                || prestamista.ApellidoPrestamista == null || prestamista.DireccionPrestamista == null
-                || prestamista.Usuario == null || prestamista.Contraseña == null)
-            {
-                return $"Campos nulos";
-            }
-            var message = (prestamistaRepository.GuardarPrestamista(prestamista));
-            return message;
+            var msg = repo.RegistrarPrestamista(prestamista);
+            return msg;
         }
     }
 }
