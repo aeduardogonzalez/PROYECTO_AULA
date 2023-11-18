@@ -8,6 +8,7 @@ namespace ENTITY
 {
     public class Cliente
     {
+        public int ID { get; set; }
         public string Cedula {  get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
@@ -15,8 +16,8 @@ namespace ENTITY
         public string Direccion { get; set; }
         public DateTime Fecha_Nacimiento {  get; set; }
         public int Puntuacion { get; set; }
-        public char Genero {  get; set; }
-        public char Estado { get; set; }
+        public string Genero {  get; set; }
+        public string Estado { get; set; }
 
 
         public Cliente()
@@ -24,7 +25,7 @@ namespace ENTITY
 
         }
 
-        public Cliente(string cedula, string nombre, string apellido, string ciudad, string direccion, DateTime fecha_Nacimiento, int puntuacion, char genero, char estado)
+        public Cliente(string cedula, string nombre, string apellido, string ciudad, string direccion, DateTime fecha_Nacimiento, int puntuacion, string genero, string estado)
         {
             Cedula = cedula;
             Nombre = nombre;

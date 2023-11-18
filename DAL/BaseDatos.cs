@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ENTITY;
+using System.Data.SqlClient;
+
+namespace DAL_ORACLE
+{
+    public class BaseDatos
+    {
+        protected SqlConnection conexion;
+        protected string cadenaConexion = "Server=.\\SQLEXPRESS;Database=Proyeceto;Trusted_Connection=True;";
+        public BaseDatos()
+        {
+            conexion = new SqlConnection(cadenaConexion);
+        }
+        public string AbrirConexion()
+        {
+            conexion.Open();
+            return conexion.State.ToString();
+        }
+
+        public string CerrarConexion()
+        {
+            conexion.Close();
+            return conexion.State.ToString();
+        }
+    }
+}

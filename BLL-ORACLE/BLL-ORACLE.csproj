@@ -46,10 +46,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DAL-ORACLE\DAL-ORACLE.csproj">
-      <Project>{501babaf-09ff-4108-8933-229c4b2181e9}</Project>
-      <Name>DAL-ORACLE</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ENTITY\ENTITY.csproj">
       <Project>{32166644-83ec-4383-934f-8d091a30ebe5}</Project>
       <Name>ENTITY</Name>
