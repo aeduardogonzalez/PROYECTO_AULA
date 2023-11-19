@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using ENTITY;
 namespace GUI
 {
     public partial class frmAñadirCliente : Form
