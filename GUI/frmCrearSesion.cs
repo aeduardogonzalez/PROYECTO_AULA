@@ -15,9 +15,6 @@ namespace GUI
         public frmCrearSesion()
         {
             InitializeComponent();
-            Bitmap img = new Bitmap(Application.StartupPath+@"\imagenes\fondo2.png");
-            this.BackgroundImage = img;
-            this.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
         private void label3_Click(object sender, EventArgs e)

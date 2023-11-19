@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAñadirCliente));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.btnAnadirCliente = new System.Windows.Forms.Button();
+            this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.cboxEstado = new System.Windows.Forms.ComboBox();
             this.cboxGenero = new System.Windows.Forms.ComboBox();
             this.cboxCiudad = new System.Windows.Forms.ComboBox();
@@ -49,13 +50,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dtpFechaNacimiento);
+            this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
+            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox1.Controls.Add(this.btnAnadirCliente);
+            this.groupBox1.Controls.Add(this.dtpFechaNacimiento);
             this.groupBox1.Controls.Add(this.cboxEstado);
             this.groupBox1.Controls.Add(this.cboxGenero);
             this.groupBox1.Controls.Add(this.cboxCiudad);
@@ -74,11 +79,26 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(9, 9);
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(566, 432);
+            this.groupBox1.Size = new System.Drawing.Size(589, 454);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
+            // 
+            // btnAnadirCliente
+            // 
+            this.btnAnadirCliente.BackColor = System.Drawing.Color.Honeydew;
+            this.btnAnadirCliente.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAnadirCliente.BackgroundImage")));
+            this.btnAnadirCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAnadirCliente.Font = new System.Drawing.Font("Bell MT", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnadirCliente.ForeColor = System.Drawing.Color.Transparent;
+            this.btnAnadirCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAnadirCliente.Location = new System.Drawing.Point(366, 337);
+            this.btnAnadirCliente.Name = "btnAnadirCliente";
+            this.btnAnadirCliente.Size = new System.Drawing.Size(129, 100);
+            this.btnAnadirCliente.TabIndex = 24;
+            this.btnAnadirCliente.UseVisualStyleBackColor = false;
+            this.btnAnadirCliente.Click += new System.EventHandler(this.btnAnadirCliente_Click);
             // 
             // dtpFechaNacimiento
             // 
@@ -87,17 +107,6 @@
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(147, 20);
             this.dtpFechaNacimiento.TabIndex = 25;
-            // 
-            // btnAnadirCliente
-            // 
-            this.btnAnadirCliente.Font = new System.Drawing.Font("Bell MT", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnadirCliente.Location = new System.Drawing.Point(310, 352);
-            this.btnAnadirCliente.Name = "btnAnadirCliente";
-            this.btnAnadirCliente.Size = new System.Drawing.Size(238, 64);
-            this.btnAnadirCliente.TabIndex = 24;
-            this.btnAnadirCliente.Text = "Añadir cliente";
-            this.btnAnadirCliente.UseVisualStyleBackColor = true;
-            this.btnAnadirCliente.Click += new System.EventHandler(this.btnAnadirCliente_Click);
             // 
             // cboxEstado
             // 
@@ -126,10 +135,12 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Bell MT", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(6, 16);
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Bell MT", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(13, 16);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(251, 31);
+            this.label10.Size = new System.Drawing.Size(296, 37);
             this.label10.TabIndex = 20;
             this.label10.Text = "Registrando Cliente";
             // 
@@ -259,17 +270,27 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Cedula";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Location = new System.Drawing.Point(0, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(589, 454);
+            this.panel1.TabIndex = 2;
+            // 
             // frmAñadirCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(589, 450);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.panel1);
             this.Name = "frmAñadirCliente";
             this.Text = "CrediXpert";
             this.Load += new System.EventHandler(this.frmAñadirCliente_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -277,25 +298,26 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.TextBox txtApellido;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtCedula;
-        private System.Windows.Forms.TextBox txtPuntuacion;
+        private System.Windows.Forms.Button btnAnadirCliente;
+        private System.Windows.Forms.DateTimePicker dtpFechaNacimiento;
         private System.Windows.Forms.ComboBox cboxEstado;
         private System.Windows.Forms.ComboBox cboxGenero;
         private System.Windows.Forms.ComboBox cboxCiudad;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button btnAnadirCliente;
-        private System.Windows.Forms.DateTimePicker dtpFechaNacimiento;
+        private System.Windows.Forms.TextBox txtPuntuacion;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtCedula;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel1;
     }
 }

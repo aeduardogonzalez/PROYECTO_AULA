@@ -47,7 +47,7 @@
             this.btnIniciarSesion.Font = new System.Drawing.Font("Bell MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciarSesion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnIniciarSesion.Image = ((System.Drawing.Image)(resources.GetObject("btnIniciarSesion.Image")));
-            this.btnIniciarSesion.Location = new System.Drawing.Point(251, 88);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(251, 52);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
             this.btnIniciarSesion.Size = new System.Drawing.Size(201, 61);
             this.btnIniciarSesion.TabIndex = 0;
@@ -61,7 +61,7 @@
             this.btnCrearSesion.Font = new System.Drawing.Font("Bell MT", 18.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearSesion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCrearSesion.Image = ((System.Drawing.Image)(resources.GetObject("btnCrearSesion.Image")));
-            this.btnCrearSesion.Location = new System.Drawing.Point(251, 177);
+            this.btnCrearSesion.Location = new System.Drawing.Point(251, 170);
             this.btnCrearSesion.Name = "btnCrearSesion";
             this.btnCrearSesion.Size = new System.Drawing.Size(201, 61);
             this.btnCrearSesion.TabIndex = 1;
@@ -71,6 +71,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
+            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.textBox2);
@@ -87,6 +89,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Bell MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(19, 116);
             this.label1.Name = "label1";
@@ -96,7 +99,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(24, 19);
             this.pictureBox1.Name = "pictureBox1";
@@ -122,6 +125,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Bell MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(19, 187);
             this.label2.Name = "label2";

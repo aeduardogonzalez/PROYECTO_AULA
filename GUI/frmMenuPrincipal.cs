@@ -15,12 +15,14 @@ namespace GUI
         public frmMenuPrincipal()
         {
             InitializeComponent();
-            Bitmap img = new Bitmap(Application.StartupPath + @"\imagenes\fondo2.png");
-            this.BackgroundImage = img;
-            this.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
         private void frmMenuPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
