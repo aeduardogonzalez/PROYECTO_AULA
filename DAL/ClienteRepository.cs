@@ -38,9 +38,9 @@ namespace DAL
 
         public string ActualizarCliente(Cliente cliente)
         {
-            string ssql = $"UPDATE [dbo].[CLIENTES] SET [Cedula] = '{cliente.Cedula}', Nombre='{cliente.Nombre}',Apellido='{cliente.Apellido}'," +
+            string ssql = $"UPDATE [dbo].[CLIENTES] SET Nombre='{cliente.Nombre}',Apellido='{cliente.Apellido}'," +
                 $"Ciudad='{cliente.Ciudad}',Direccion='{cliente.Direccion}',Fecha_Nacimiento='{cliente.FechaNacimiento}', Puntuacion='{cliente.Puntuacion}'," +
-                $"Genero='{cliente.Genero}',Estado='{cliente.Estado}' WHERE ID='{cliente.ID}'";
+                $"Genero='{cliente.Genero}',Estado='{cliente.Estado}' WHERE Id='{cliente.Id}'";
             SqlCommand cmd = new SqlCommand(ssql, conexion);
             AbrirConexion();
             var i = cmd.ExecuteNonQuery();
@@ -75,7 +75,7 @@ namespace DAL
         {
             Cliente cliente = new Cliente();
 
-            cliente.ID = Convert.ToInt32(reader["ID"]);
+            cliente.Id = Convert.ToInt32(reader["Id"]);
             cliente.Cedula = Convert.ToString(reader["Cedula"]);
             cliente.Nombre = Convert.ToString(reader["Nombre"]);
             cliente.Apellido = Convert.ToString(reader["Apellido"]);

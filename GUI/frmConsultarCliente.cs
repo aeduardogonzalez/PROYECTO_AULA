@@ -16,10 +16,5 @@ namespace GUI
         {
             InitializeComponent();
         }
-
-        private void frmConsultarCliente_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

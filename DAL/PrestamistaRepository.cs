@@ -33,7 +33,7 @@ namespace DAL
             return "datos invalidos de el prestamista";
         }
 
-        public List<Prestamista> ObtenerTodos()
+        public List<Prestamista> ConsultarPrestamista()
         {
             List<Prestamista> list = new List<Prestamista>();
             string ssql = "select * from PRESTAMISTAS";

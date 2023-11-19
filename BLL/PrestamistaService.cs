@@ -17,5 +17,10 @@ namespace BLL
             var msg = repo.RegistrarPrestamista(prestamista);
             return msg;
         }
+        public List<Prestamista> ConsultarPrestamista()
+        {
+            var msg = repo.ConsultarPrestamista();
+            return msg;
+        }
     }
 }
