@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,15 +46,15 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // label1
+            // button2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bell MT", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(264, 56);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "CrediXpert";
+            this.button2.Font = new System.Drawing.Font("Bell MT", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(404, 175);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(289, 65);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "Consultar Clientes";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -66,15 +66,15 @@
             this.button1.Text = "Añadir Clientes";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // label1
             // 
-            this.button2.Font = new System.Drawing.Font("Bell MT", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(404, 175);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(289, 65);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Consultar Clientes";
-            this.button2.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bell MT", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(264, 56);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "CrediXpert";
             // 
             // frmMenuPrincipal
             // 
@@ -84,6 +84,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmMenuPrincipal";
             this.Text = "CrediXpert";
+            this.Load += new System.EventHandler(this.frmMenuPrincipal_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

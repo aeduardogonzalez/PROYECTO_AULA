@@ -16,6 +16,9 @@ namespace GUI
         public frmAñadirCliente()
         {
             InitializeComponent();
+            Bitmap img = new Bitmap(Application.StartupPath + @"\imagenes\fondo2.png");
+            this.BackgroundImage = img;
+            this.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
         private void btnAnadirCliente_Click(object sender, EventArgs e)
@@ -42,6 +45,11 @@ namespace GUI
         }
 
         private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmAñadirCliente_Load(object sender, EventArgs e)
         {
 
         }

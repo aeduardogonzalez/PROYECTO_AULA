@@ -15,6 +15,9 @@ namespace GUI
         public frmSession()
         {
             InitializeComponent();
+            Bitmap img = new Bitmap(Application.StartupPath + @"\imagenes\fondo2.png");
+            this.BackgroundImage = img;
+            this.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -23,6 +26,11 @@ namespace GUI
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmSession_Load(object sender, EventArgs e)
         {
 
         }

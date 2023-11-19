@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.btnAnadirCliente = new System.Windows.Forms.Button();
             this.cboxEstado = new System.Windows.Forms.ComboBox();
             this.cboxGenero = new System.Windows.Forms.ComboBox();
@@ -48,7 +49,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,6 +79,14 @@
             this.groupBox1.Size = new System.Drawing.Size(566, 432);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
+            // 
+            // dtpFechaNacimiento
+            // 
+            this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(410, 84);
+            this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
+            this.dtpFechaNacimiento.Size = new System.Drawing.Size(147, 20);
+            this.dtpFechaNacimiento.TabIndex = 25;
             // 
             // btnAnadirCliente
             // 
@@ -251,14 +259,6 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Cedula";
             // 
-            // dtpFechaNacimiento
-            // 
-            this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaNacimiento.Location = new System.Drawing.Point(410, 84);
-            this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
-            this.dtpFechaNacimiento.Size = new System.Drawing.Size(147, 20);
-            this.dtpFechaNacimiento.TabIndex = 25;
-            // 
             // frmAñadirCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,6 +267,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmAñadirCliente";
             this.Text = "CrediXpert";
+            this.Load += new System.EventHandler(this.frmAñadirCliente_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
