@@ -23,7 +23,7 @@ namespace DAL
                 return "datos invalidos de el cliente";
             }
             string ssql = "INSERT INTO [CLIENTES]([Cedula],[Nombre],[Apellido],[Ciudad],[Direccion],[Fecha_Nacimiento],[Puntuacion],[Genero],[Estado])VALUES" +
-                          $"('{cliente.Cedula}','{cliente.Nombre}','{cliente.Apellido}','{cliente.Ciudad}','{cliente.Direccion}','{cliente.Fecha_Nacimiento}'," +
+                          $"('{cliente.Cedula}','{cliente.Nombre}','{cliente.Apellido}','{cliente.Ciudad}','{cliente.Direccion}','{cliente.FechaNacimiento}'," +
                           $"'{cliente.Puntuacion}','{cliente.Genero}','{cliente.Estado}')";
             SqlCommand cmd = new SqlCommand(ssql, conexion);
             AbrirConexion();
@@ -39,7 +39,7 @@ namespace DAL
         public string ActualizarCliente(Cliente cliente)
         {
             string ssql = $"UPDATE [dbo].[CLIENTES] SET [Cedula] = '{cliente.Cedula}', Nombre='{cliente.Nombre}',Apellido='{cliente.Apellido}'," +
-                $"Ciudad='{cliente.Ciudad}',Direccion='{cliente.Direccion}',Fecha_Nacimiento='{cliente.Fecha_Nacimiento}', Puntuacion='{cliente.Puntuacion}'," +
+                $"Ciudad='{cliente.Ciudad}',Direccion='{cliente.Direccion}',Fecha_Nacimiento='{cliente.FechaNacimiento}', Puntuacion='{cliente.Puntuacion}'," +
                 $"Genero='{cliente.Genero}',Estado='{cliente.Estado}' WHERE ID='{cliente.ID}'";
             SqlCommand cmd = new SqlCommand(ssql, conexion);
             AbrirConexion();
@@ -47,7 +47,7 @@ namespace DAL
             CerrarConexion();
             if (i >= 1)
             {
-                return $"se actualizo el cliente con el nombre--> {cliente.Nombre} ";
+                return $"se actualizo el cliente con el nombre --> {cliente.Nombre} ";
             }
             return "datos invalidos de el cliente";
         }
@@ -81,7 +81,7 @@ namespace DAL
             cliente.Apellido = Convert.ToString(reader["Apellido"]);
             cliente.Ciudad = Convert.ToString(reader["Ciudad"]);
             cliente.Direccion = Convert.ToString(reader["Direccion"]);
-            cliente.Fecha_Nacimiento = Convert.ToDateTime(reader["Fecha_Nacimiento"]);
+            cliente.FechaNacimiento = Convert.ToDateTime(reader["FechaNacimiento"]);
             cliente.Puntuacion = Convert.ToInt32(reader["Puntuacion"]);
             cliente.Genero = Convert.ToString(reader["Genero"]);
             cliente.Estado = Convert.ToString(reader["Estado"]);

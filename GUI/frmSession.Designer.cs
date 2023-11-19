@@ -51,7 +51,7 @@
             this.btnIniciarSesion.Name = "btnIniciarSesion";
             this.btnIniciarSesion.Size = new System.Drawing.Size(201, 61);
             this.btnIniciarSesion.TabIndex = 0;
-            this.btnIniciarSesion.Text = "iniciar sesion";
+            this.btnIniciarSesion.Text = "Iniciar Sesion";
             this.btnIniciarSesion.UseVisualStyleBackColor = false;
             this.btnIniciarSesion.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -65,7 +65,7 @@
             this.btnCrearSesion.Name = "btnCrearSesion";
             this.btnCrearSesion.Size = new System.Drawing.Size(201, 61);
             this.btnCrearSesion.TabIndex = 1;
-            this.btnCrearSesion.Text = "crear sesion";
+            this.btnCrearSesion.Text = "Registrarse";
             this.btnCrearSesion.UseVisualStyleBackColor = false;
             // 
             // groupBox1
@@ -93,7 +93,7 @@
             this.label1.Font = new System.Drawing.Font("Bell MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(19, 116);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 27);
+            this.label1.Size = new System.Drawing.Size(113, 34);
             this.label1.TabIndex = 7;
             this.label1.Text = "Usuario";
             // 
@@ -112,14 +112,14 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(24, 218);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(189, 20);
+            this.textBox2.Size = new System.Drawing.Size(189, 23);
             this.textBox2.TabIndex = 5;
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(24, 146);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(189, 20);
+            this.textBox1.Size = new System.Drawing.Size(189, 23);
             this.textBox1.TabIndex = 4;
             // 
             // label2
@@ -129,13 +129,13 @@
             this.label2.Font = new System.Drawing.Font("Bell MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(19, 187);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 27);
+            this.label2.Size = new System.Drawing.Size(154, 34);
             this.label2.TabIndex = 3;
             this.label2.Text = "Contraseña";
             // 
             // frmSession
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(502, 270);
             this.Controls.Add(this.groupBox1);

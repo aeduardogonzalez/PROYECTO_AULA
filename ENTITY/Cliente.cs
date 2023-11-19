@@ -14,7 +14,7 @@ namespace ENTITY
         public string Apellido { get; set; }
         public string Ciudad {  get; set; }
         public string Direccion { get; set; }
-        public DateTime Fecha_Nacimiento {  get; set; }
+        public DateTime FechaNacimiento {  get; set; }
         public int Puntuacion { get; set; }
         public string Genero {  get; set; }
         public string Estado { get; set; }
@@ -32,7 +32,7 @@ namespace ENTITY
             Apellido = apellido;
             Ciudad = ciudad;
             Direccion = direccion;
-            Fecha_Nacimiento = fecha_Nacimiento;
+            FechaNacimiento = fecha_Nacimiento;
             Puntuacion = puntuacion;
             Genero = genero;
             Estado = estado;

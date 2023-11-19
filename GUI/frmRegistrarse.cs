@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class frmCrearSesion : Form
+    public partial class frmRegistrarse : Form
     {
-        public frmCrearSesion()
+        public frmRegistrarse()
         {
             InitializeComponent();
         }

@@ -32,5 +32,40 @@ namespace DAL
             }
             return "datos invalidos de el prestamista";
         }
+
+        public List<Prestamista> ObtenerTodos()
+        {
+            List<Prestamista> list = new List<Prestamista>();
+            string ssql = "select * from PRESTAMISTAS";
+
+            SqlCommand cmd = new SqlCommand(ssql, conexion);
+            AbrirConexion();
+            SqlDataReader Rdr = cmd.ExecuteReader();
+
+            while (Rdr.Read())
+            {
+                list.Add(Mapear(Rdr));
+            }
+            Rdr.Close();
+            CerrarConexion();
+
+            return list;
+
+        }
+        private Prestamista Mapear(SqlDataReader reader)
+        {
+            Prestamista prestamista = new Prestamista();
+
+            prestamista.CedulaPrestamista = Convert.ToString(reader["CedulaPrestamista"]);
+            prestamista.NombrePrestamista = Convert.ToString(reader["NombrePrestamista"]);
+            prestamista.ApellidoPrestamista = Convert.ToString(reader["ApellidoPrestamista"]);
+            prestamista.CiudadPrestamista = Convert.ToString(reader["CiudadPrestamista"]);
+            prestamista.DireccionPrestamista = Convert.ToString(reader["DireccionPrestamista"]);
+            prestamista.Usuario = Convert.ToString(reader["Usuario"]);
+            prestamista.Contraseña = Convert.ToString(reader["Contraseña"]);
+
+            return prestamista;
+        }
+
     }
 }

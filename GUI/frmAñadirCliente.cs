@@ -20,22 +20,30 @@ namespace GUI
 
         private void btnAnadirCliente_Click(object sender, EventArgs e)
         {
-            Cliente cliente = new Cliente
+            if (int.TryParse(txtPuntuacion.Text, out int puntuacion))
             {
-                Cedula = txtCedula.Text,
-                Nombre = txtNombre.Text,
-                Apellido = txtApellido.Text,
-                Ciudad = cboxCiudad.Text,
-                Direccion = txtDireccion.Text,
-                Fecha_Nacimiento = dtpFechaNacimiento.Value,
-                Puntuacion = txtPuntuacion.Text,
-                Genero = cboxGenero.Text,
-                Estado = cboxEstado.Text
+                Cliente cliente = new Cliente
+                {
+                    Cedula = txtCedula.Text,
+                    Nombre = txtNombre.Text,
+                    Apellido = txtApellido.Text,
+                    Ciudad = cboxCiudad.Text,
+                    Direccion = txtDireccion.Text,
+                    FechaNacimiento = dtpFechaNacimiento.Value,
+                    Puntuacion = puntuacion,
+                    Genero = cboxGenero.Text,
+                    Estado = cboxEstado.Text
 
-            };
-
+                };
+                Insertar(cliente);
+            }
+            else
+            {
+                MessageBox.Show("Por favor, ingrese un valor válido para la puntuación.");
+            }
         }
-        private void Añadir(Cliente cliente)
+
+        private void Insertar(Cliente cliente)
         {
             var msg = clienteService.RegistrarCliente(cliente);
             MessageBox.Show(msg);
@@ -43,7 +51,7 @@ namespace GUI
 
         private void label6_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void frmAñadirCliente_Load(object sender, EventArgs e)
