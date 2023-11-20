@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultarCliente));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvConsulta = new System.Windows.Forms.DataGridView();
             this.cedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,14 +52,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.dgvConsulta);
             this.groupBox1.Controls.Add(this.comboBox3);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.comboBox1);
@@ -79,10 +79,10 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
-            // dataGridView1
+            // dgvConsulta
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvConsulta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cedula,
             this.nombre,
             this.Apellido,
@@ -92,12 +92,12 @@
             this.ciudad,
             this.estado,
             this.puntuacion});
-            this.dataGridView1.Location = new System.Drawing.Point(0, 244);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1179, 281);
-            this.dataGridView1.TabIndex = 32;
+            this.dgvConsulta.Location = new System.Drawing.Point(0, 244);
+            this.dgvConsulta.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvConsulta.Name = "dgvConsulta";
+            this.dgvConsulta.RowHeadersWidth = 51;
+            this.dgvConsulta.Size = new System.Drawing.Size(1179, 281);
+            this.dgvConsulta.TabIndex = 32;
             // 
             // cedula
             // 
@@ -277,17 +277,17 @@
             this.label10.TabIndex = 21;
             this.label10.Text = "Consultar Cliente";
             // 
-            // frmModificarCliente
+            // frmConsultarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1210, 549);
             this.Controls.Add(this.groupBox1);
-            this.Name = "frmModificarCliente";
+            this.Name = "frmConsultarCliente";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -295,7 +295,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvConsulta;
         private System.Windows.Forms.DataGridViewTextBoxColumn cedula;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;

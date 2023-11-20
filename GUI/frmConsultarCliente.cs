@@ -16,5 +16,23 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        BLL.ClienteService clienteService = new BLL.ClienteService();
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            cargarGrillaPersonas();
+        }
+
+        private void cargarGrillaPersonas()
+        {
+            dgvConsulta.DataSource = clienteService.ConsultarClientes();
+            //dgvPersonas.AutoResizeColumns();
+            dgvConsulta.Columns[0].Visible = false;
+            //dgvPersonas.Columns[1].AutoSizeMode=DataGridViewAutoSizeColumnMode.Fill; // auto
+            dgvConsulta.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvConsulta.RowHeadersVisible = false;
+        }
+
     }
 }
