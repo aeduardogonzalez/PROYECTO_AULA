@@ -19,7 +19,9 @@ namespace GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            frmMenuPrincipal menu = new frmMenuPrincipal();
+            menu.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -29,6 +31,7 @@ namespace GUI
 
         private void frmSession_Load(object sender, EventArgs e)
         {
+            
 
         }
 

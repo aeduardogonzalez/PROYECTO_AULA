@@ -29,14 +29,14 @@ namespace GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            frmMenuPrincipal menu = new frmMenuPrincipal();
+            menu.Show();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-            this.Hide();
-            frmMenuPrincipal menu = new frmMenuPrincipal();
-            menu.Show();
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
