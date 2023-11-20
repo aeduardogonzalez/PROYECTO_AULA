@@ -26,5 +26,19 @@ namespace GUI
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmConsultarCliente consultar = new frmConsultarCliente();
+            consultar.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmAñadirCliente añadir = new frmAñadirCliente();
+            añadir.Show();
+        }
     }
 }

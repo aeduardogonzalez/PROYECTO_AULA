@@ -34,5 +34,6 @@ namespace GUI
             dgvConsulta.RowHeadersVisible = false;
         }
 
+
     }
 }

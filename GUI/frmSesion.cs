@@ -31,5 +31,12 @@ namespace GUI
         {
 
         }
+
+        private void btnCrearSesion_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmRegistrarse registro = new frmRegistrarse();
+            registro.Show();
+        }
     }
 }

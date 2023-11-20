@@ -67,6 +67,7 @@
             this.btnCrearSesion.TabIndex = 1;
             this.btnCrearSesion.Text = "Registrarse";
             this.btnCrearSesion.UseVisualStyleBackColor = false;
+            this.btnCrearSesion.Click += new System.EventHandler(this.btnCrearSesion_Click);
             // 
             // groupBox1
             // 
@@ -133,14 +134,14 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Contraseña";
             // 
-            // frmSession
+            // frmSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(502, 270);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "frmSession";
+            this.Name = "frmSesion";
             this.Text = "CrediXpert";
             this.Load += new System.EventHandler(this.frmSession_Load);
             this.groupBox1.ResumeLayout(false);

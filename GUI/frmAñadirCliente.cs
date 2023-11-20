@@ -41,6 +41,8 @@ namespace GUI
             {
                 MessageBox.Show("Por favor, ingrese un valor válido para la puntuación.");
             }
+
+
         }
 
         private void Insertar(Cliente cliente)
