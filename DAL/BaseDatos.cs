@@ -10,7 +10,7 @@ namespace DAL
     public class BaseDatos
     {
         protected SqlConnection conexion;
-        protected string cadenaConexion = "Server=.\\SQLEXPRESS;Database=Proyeceto;Trusted_Connection=True;";
+        protected string cadenaConexion = "Server=.\\SQLEXPRESS;Database=Proyecto;Trusted_Connection=True;";
         public BaseDatos()
         {
             conexion = new SqlConnection(cadenaConexion);

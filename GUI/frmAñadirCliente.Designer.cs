@@ -80,9 +80,9 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(785, 559);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
@@ -96,7 +96,7 @@
             this.btnAnadirCliente.ForeColor = System.Drawing.Color.Transparent;
             this.btnAnadirCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAnadirCliente.Location = new System.Drawing.Point(488, 415);
-            this.btnAnadirCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAnadirCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnAnadirCliente.Name = "btnAnadirCliente";
             this.btnAnadirCliente.Size = new System.Drawing.Size(172, 123);
             this.btnAnadirCliente.TabIndex = 24;
@@ -107,7 +107,7 @@
             // 
             this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFechaNacimiento.Location = new System.Drawing.Point(547, 103);
-            this.dtpFechaNacimiento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFechaNacimiento.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(195, 22);
             this.dtpFechaNacimiento.TabIndex = 25;
@@ -115,8 +115,13 @@
             // cboxEstado
             // 
             this.cboxEstado.FormattingEnabled = true;
+            this.cboxEstado.Items.AddRange(new object[] {
+            "Activo",
+            "Inactivo",
+            "Reportado",
+            "En mora"});
             this.cboxEstado.Location = new System.Drawing.Point(547, 356);
-            this.cboxEstado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboxEstado.Margin = new System.Windows.Forms.Padding(4);
             this.cboxEstado.Name = "cboxEstado";
             this.cboxEstado.Size = new System.Drawing.Size(195, 24);
             this.cboxEstado.TabIndex = 23;
@@ -124,8 +129,11 @@
             // cboxGenero
             // 
             this.cboxGenero.FormattingEnabled = true;
+            this.cboxGenero.Items.AddRange(new object[] {
+            "Masculino",
+            "Femenino"});
             this.cboxGenero.Location = new System.Drawing.Point(547, 273);
-            this.cboxGenero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboxGenero.Margin = new System.Windows.Forms.Padding(4);
             this.cboxGenero.Name = "cboxGenero";
             this.cboxGenero.Size = new System.Drawing.Size(195, 24);
             this.cboxGenero.TabIndex = 22;
@@ -133,8 +141,10 @@
             // cboxCiudad
             // 
             this.cboxCiudad.FormattingEnabled = true;
+            this.cboxCiudad.Items.AddRange(new object[] {
+            "Valledupar"});
             this.cboxCiudad.Location = new System.Drawing.Point(117, 356);
-            this.cboxCiudad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboxCiudad.Margin = new System.Windows.Forms.Padding(4);
             this.cboxCiudad.Name = "cboxCiudad";
             this.cboxCiudad.Size = new System.Drawing.Size(195, 24);
             this.cboxCiudad.TabIndex = 21;
@@ -155,7 +165,7 @@
             // txtPuntuacion
             // 
             this.txtPuntuacion.Location = new System.Drawing.Point(547, 185);
-            this.txtPuntuacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPuntuacion.Margin = new System.Windows.Forms.Padding(4);
             this.txtPuntuacion.Name = "txtPuntuacion";
             this.txtPuntuacion.Size = new System.Drawing.Size(195, 22);
             this.txtPuntuacion.TabIndex = 17;
@@ -163,7 +173,7 @@
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(117, 433);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(195, 22);
             this.txtDireccion.TabIndex = 15;
@@ -171,7 +181,7 @@
             // txtApellido
             // 
             this.txtApellido.Location = new System.Drawing.Point(117, 277);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(195, 22);
             this.txtApellido.TabIndex = 13;
@@ -179,7 +189,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(117, 188);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(195, 22);
             this.txtNombre.TabIndex = 12;
@@ -187,7 +197,7 @@
             // txtCedula
             // 
             this.txtCedula.Location = new System.Drawing.Point(117, 101);
-            this.txtCedula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCedula.Margin = new System.Windows.Forms.Padding(4);
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(195, 22);
             this.txtCedula.TabIndex = 11;
@@ -297,7 +307,7 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Location = new System.Drawing.Point(0, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(785, 559);
             this.panel1.TabIndex = 2;
@@ -308,7 +318,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(785, 554);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAñadirCliente";
             this.Text = "CrediXpert";
             this.Load += new System.EventHandler(this.frmAñadirCliente_Load);
