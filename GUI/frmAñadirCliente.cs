@@ -27,13 +27,12 @@ namespace GUI
                     Cedula = txtCedula.Text,
                     Nombre = txtNombre.Text,
                     Apellido = txtApellido.Text,
-                    Ciudad = cboxCiudad.Text,
-                    Direccion = txtDireccion.Text,
                     FechaNacimiento = dtpFechaNacimiento.Value,
-                    Puntuacion = puntuacion,
                     Genero = cboxGenero.Text,
-                    Estado = cboxEstado.Text
-
+                    Direccion = txtDireccion.Text,
+                    Puntuacion = puntuacion,
+                    Estado = cboxEstado.Text,
+                    Ciudad = cboxCiudad.Text
                 };
                 Insertar(cliente);
             }

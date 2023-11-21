@@ -22,9 +22,9 @@ namespace DAL
             {
                 return "datos invalidos de el cliente";
             }
-            string ssql = "INSERT INTO [CLIENTES]([Cedula],[Nombre],[Apellido],[Ciudad],[Direccion],[Fecha_Nacimiento],[Puntuacion],[Genero],[Estado])VALUES" +
-                          $"('{cliente.Cedula}','{cliente.Nombre}','{cliente.Apellido}','{cliente.Ciudad}','{cliente.Direccion}','{cliente.FechaNacimiento}'," +
-                          $"'{cliente.Puntuacion}','{cliente.Genero}','{cliente.Estado}')";
+            string ssql = "INSERT INTO [CLIENTES]([Cedula],[Nombre],[Apellido],[FechaNacimiento],[Sexo],[Direccion],[Puntuacion],[Estado],[Id_Ciudad])VALUES" +
+                          $"('{cliente.Cedula}','{cliente.Nombre}','{cliente.Apellido}', '{cliente.FechaNacimiento}, '{cliente.Genero}' ,'{cliente.Direccion}', '{cliente.Puntuacion}''," +
+                          $",  '{cliente.Estado}', '{cliente.Ciudad}')";
             SqlCommand cmd = new SqlCommand(ssql, conexion);
             AbrirConexion();
             var i = cmd.ExecuteNonQuery();
@@ -38,9 +38,9 @@ namespace DAL
 
         public string ActualizarCliente(Cliente cliente)
         {
-            string ssql = $"UPDATE [dbo].[CLIENTES] SET Nombre='{cliente.Nombre}',Apellido='{cliente.Apellido}'," +
-                $"Ciudad='{cliente.Ciudad}',Direccion='{cliente.Direccion}',Fecha_Nacimiento='{cliente.FechaNacimiento}', Puntuacion='{cliente.Puntuacion}'," +
-                $"Genero='{cliente.Genero}',Estado='{cliente.Estado}' WHERE Id='{cliente.Id}'";
+            string ssql = $"UPDATE [dbo].[CLIENTES] SET Nombre='{cliente.Nombre}',Apellido='{cliente.Apellido}', FechaNacimiento='{cliente.FechaNacimiento}'," +
+                $"Sexo='{cliente.Genero}', Direccion='{cliente.Direccion}',  Puntuacion='{cliente.Puntuacion}', Estado='{cliente.Estado}'," +
+                $" Id_Ciudad='{cliente.Ciudad}' WHERE Cedula='{cliente.Cedula}'";
             SqlCommand cmd = new SqlCommand(ssql, conexion);
             AbrirConexion();
             var i = cmd.ExecuteNonQuery();
@@ -74,18 +74,16 @@ namespace DAL
         private Cliente Mapeo(SqlDataReader reader)
         {
             Cliente cliente = new Cliente();
-
-            cliente.Id = Convert.ToInt32(reader["Id"]);
+            
             cliente.Cedula = Convert.ToString(reader["Cedula"]);
             cliente.Nombre = Convert.ToString(reader["Nombre"]);
             cliente.Apellido = Convert.ToString(reader["Apellido"]);
-            cliente.Ciudad = Convert.ToString(reader["Ciudad"]);
-            cliente.Direccion = Convert.ToString(reader["Direccion"]);
             cliente.FechaNacimiento = Convert.ToDateTime(reader["FechaNacimiento"]);
+            cliente.Genero = Convert.ToString(reader["Sexo"]);
+            cliente.Direccion = Convert.ToString(reader["Direccion"]);
             cliente.Puntuacion = Convert.ToInt32(reader["Puntuacion"]);
-            cliente.Genero = Convert.ToString(reader["Genero"]);
             cliente.Estado = Convert.ToString(reader["Estado"]);
-           
+            cliente.Ciudad = Convert.ToString(reader["Id_Ciudad"]);
             return cliente;
         }
 
