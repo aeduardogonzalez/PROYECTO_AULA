@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Security.Policy;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using ENTITY;
 
@@ -22,9 +24,10 @@ namespace DAL
             {
                 return "datos invalidos de el cliente";
             }
-            string ssql = "INSERT INTO [CLIENTES]([Cedula],[Nombre],[Apellido],[FechaNacimiento],[Sexo],[Direccion],[Puntuacion],[Estado],[Id_Ciudad])VALUES" +
-                          $"('{cliente.Cedula}','{cliente.Nombre}','{cliente.Apellido}', '{cliente.FechaNacimiento}, '{cliente.Genero}' ,'{cliente.Direccion}', '{cliente.Puntuacion}''," +
-                          $",  '{cliente.Estado}', '{cliente.Ciudad}')";
+            string ssql = "INSERT INTO CLIENTES(Cedula,Nombre,Apellido,FechaNacimiento,Genero,Direccion,Puntuacion,Estado,Id_Ciudad,Nombre_Ciudad) VALUES" +
+            $"('" + cliente.Cedula + "', '" + cliente.Nombre + "', '" + cliente.Apellido + "', '" + cliente.FechaNacimiento + "', '" + cliente.Genero + "' , '" +
+            "" + cliente.Direccion + "',  '" + cliente.Puntuacion + "', '" + cliente.Estado + "', '" + cliente.ciudad.Id_Ciudad + "', '" +
+            "" + cliente.ciudad.Nombre_Ciudad + "');";
             SqlCommand cmd = new SqlCommand(ssql, conexion);
             AbrirConexion();
             var i = cmd.ExecuteNonQuery();
@@ -38,9 +41,9 @@ namespace DAL
 
         public string ActualizarCliente(Cliente cliente)
         {
-            string ssql = $"UPDATE [dbo].[CLIENTES] SET Nombre='{cliente.Nombre}',Apellido='{cliente.Apellido}', FechaNacimiento='{cliente.FechaNacimiento}'," +
-                $"Sexo='{cliente.Genero}', Direccion='{cliente.Direccion}',  Puntuacion='{cliente.Puntuacion}', Estado='{cliente.Estado}'," +
-                $" Id_Ciudad='{cliente.Ciudad}' WHERE Cedula='{cliente.Cedula}'";
+            string ssql = $"UPDATE [dbo].[CLIENTES] SET Cedula='{cliente.Cedula}',Nombre='{cliente.Nombre}',Apellido='{cliente.Apellido}'," +
+                $"FechaNacimiento='{cliente.FechaNacimiento}',Genero='{cliente.Genero}', Direccion='{cliente.Direccion}',  Puntuacion='{cliente.Puntuacion}'," +
+                $"Estado='{cliente.Estado}',Id_Ciudad='{cliente.ciudad.Id_Ciudad}' WHERE ID='{cliente.ID}'";
             SqlCommand cmd = new SqlCommand(ssql, conexion);
             AbrirConexion();
             var i = cmd.ExecuteNonQuery();
@@ -73,19 +76,23 @@ namespace DAL
 
         private Cliente Mapeo(SqlDataReader reader)
         {
-            Cliente cliente = new Cliente();
-            
-            cliente.Cedula = Convert.ToString(reader["Cedula"]);
-            cliente.Nombre = Convert.ToString(reader["Nombre"]);
-            cliente.Apellido = Convert.ToString(reader["Apellido"]);
-            cliente.FechaNacimiento = Convert.ToDateTime(reader["FechaNacimiento"]);
-            cliente.Genero = Convert.ToString(reader["Sexo"]);
-            cliente.Direccion = Convert.ToString(reader["Direccion"]);
-            cliente.Puntuacion = Convert.ToInt32(reader["Puntuacion"]);
-            cliente.Estado = Convert.ToString(reader["Estado"]);
-            cliente.Ciudad = Convert.ToString(reader["Id_Ciudad"]);
-            return cliente;
-        }
+            Cliente cliente = new Cliente
+            {
+                ID = Convert.ToInt32(reader["ID"]),
+                Cedula = Convert.ToString(reader["Cedula"]),
+                Nombre = Convert.ToString(reader["Nombre"]),
+                Apellido = Convert.ToString(reader["Apellido"]),
+                FechaNacimiento = Convert.ToString(reader["FechaNacimiento"]),
+                Genero = Convert.ToString(reader["Genero"]),
+                Direccion = Convert.ToString(reader["Direccion"]),
+                Puntuacion = Convert.ToDecimal(reader["Puntuacion"]),
+                Estado = Convert.ToString(reader["Estado"]),
+                ciudad = new Ciudad { Id_Ciudad = Convert.ToInt32(reader["Id_Ciudad"]), Nombre_Ciudad = Convert.ToString(reader["Nombre_Ciudad"])},
 
-    }
+            };
+
+            return cliente;
+
+        }
+}
 }

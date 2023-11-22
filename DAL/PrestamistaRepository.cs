@@ -18,17 +18,15 @@ namespace DAL
             {
                 return "datos invalidos de el prestamista";
             }
-            string ssql = "INSERT INTO [PRESTAMISTAS]([CedulaPrestamista],[NombrePrestamista],[ApellidoPrestamista],[CiudadPrestamista]," +
-                          "[DireccionPrestamista],[Usuario],[Contraseña])VALUES" +
-                          $"('{prestamista.CedulaPrestamista}','{prestamista.NombrePrestamista}','{prestamista.ApellidoPrestamista}'," +
-                          $"'{prestamista.CiudadPrestamista}','{prestamista.DireccionPrestamista}','{prestamista.Usuario}','{prestamista.Contraseña}')";
+            string ssql = "INSERT INTO [PRESTAMISTAS]([Usuario],[Contraseña])VALUES" +
+                          $"('{prestamista.Usuario}','{prestamista.Contraseña}')";
             SqlCommand cmd = new SqlCommand(ssql, conexion);
             AbrirConexion();
             var i = cmd.ExecuteNonQuery();
             CerrarConexion();
             if (i >= 1)
             {
-                return $"Se ha registrado el prestamista --> {prestamista.NombrePrestamista} ";
+                return $"Se ha registrado el prestamista --> {prestamista.Usuario}";
             }
             return "datos invalidos de el prestamista";
         }
@@ -56,11 +54,6 @@ namespace DAL
         {
             Prestamista prestamista = new Prestamista();
 
-            prestamista.CedulaPrestamista = Convert.ToString(reader["CedulaPrestamista"]);
-            prestamista.NombrePrestamista = Convert.ToString(reader["NombrePrestamista"]);
-            prestamista.ApellidoPrestamista = Convert.ToString(reader["ApellidoPrestamista"]);
-            prestamista.CiudadPrestamista = Convert.ToString(reader["CiudadPrestamista"]);
-            prestamista.DireccionPrestamista = Convert.ToString(reader["DireccionPrestamista"]);
             prestamista.Usuario = Convert.ToString(reader["Usuario"]);
             prestamista.Contraseña = Convert.ToString(reader["Contraseña"]);
 

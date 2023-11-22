@@ -40,12 +40,12 @@ namespace GUI
                 Cedula = fila.Cells[0].Value.ToString(),
                 Nombre = fila.Cells[1].Value.ToString(),
                 Apellido = fila.Cells[2].Value.ToString(),
-                FechaNacimiento = Convert.ToDateTime(fila.Cells[5].Value),
+                FechaNacimiento = Convert.ToString(fila.Cells[5].Value),
                 Genero = fila.Cells[7].Value.ToString(),
                 Direccion = fila.Cells[4].Value.ToString(),
                 Puntuacion = Convert.ToInt32(fila.Cells[6].Value),
                 Estado = fila.Cells[8].Value.ToString(),
-                Ciudad = fila.Cells[3].Value.ToString(),
+            //    Ciudad = fila.Cells[3].Value.ToString(),
               
             };
             var respuesta = MessageBox.Show("desea actualizar los datos ", "actualizar datos", MessageBoxButtons.YesNo, MessageBoxIcon.Question);

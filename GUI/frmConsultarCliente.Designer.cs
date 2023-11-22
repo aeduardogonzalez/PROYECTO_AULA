@@ -31,15 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultarCliente));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvConsulta = new System.Windows.Forms.DataGridView();
-            this.cedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.edad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.genero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ciudad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.puntuacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -51,6 +42,17 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.puntuacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Id_Ciudad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ciudad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).BeginInit();
             this.SuspendLayout();
@@ -83,84 +85,23 @@
             // 
             this.dgvConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsulta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
             this.cedula,
             this.nombre,
             this.Apellido,
-            this.edad,
+            this.FechaNacimiento,
             this.genero,
             this.direccion,
-            this.ciudad,
+            this.puntuacion,
             this.estado,
-            this.puntuacion});
+            this.Id_Ciudad,
+            this.ciudad});
             this.dgvConsulta.Location = new System.Drawing.Point(0, 244);
             this.dgvConsulta.Margin = new System.Windows.Forms.Padding(4);
             this.dgvConsulta.Name = "dgvConsulta";
             this.dgvConsulta.RowHeadersWidth = 51;
             this.dgvConsulta.Size = new System.Drawing.Size(1179, 281);
             this.dgvConsulta.TabIndex = 32;
-            // 
-            // cedula
-            // 
-            this.cedula.HeaderText = "Cedula";
-            this.cedula.MinimumWidth = 6;
-            this.cedula.Name = "cedula";
-            this.cedula.Width = 125;
-            // 
-            // nombre
-            // 
-            this.nombre.HeaderText = "Nombre";
-            this.nombre.MinimumWidth = 6;
-            this.nombre.Name = "nombre";
-            this.nombre.Width = 125;
-            // 
-            // Apellido
-            // 
-            this.Apellido.HeaderText = "Apellidos";
-            this.Apellido.MinimumWidth = 6;
-            this.Apellido.Name = "Apellido";
-            this.Apellido.Width = 125;
-            // 
-            // edad
-            // 
-            this.edad.HeaderText = "Edad";
-            this.edad.MinimumWidth = 6;
-            this.edad.Name = "edad";
-            this.edad.Width = 125;
-            // 
-            // genero
-            // 
-            this.genero.HeaderText = "Genero";
-            this.genero.MinimumWidth = 6;
-            this.genero.Name = "genero";
-            this.genero.Width = 125;
-            // 
-            // direccion
-            // 
-            this.direccion.HeaderText = "Direccion";
-            this.direccion.MinimumWidth = 6;
-            this.direccion.Name = "direccion";
-            this.direccion.Width = 125;
-            // 
-            // ciudad
-            // 
-            this.ciudad.HeaderText = "Ciudad";
-            this.ciudad.MinimumWidth = 6;
-            this.ciudad.Name = "ciudad";
-            this.ciudad.Width = 125;
-            // 
-            // estado
-            // 
-            this.estado.HeaderText = "Estado";
-            this.estado.MinimumWidth = 6;
-            this.estado.Name = "estado";
-            this.estado.Width = 125;
-            // 
-            // puntuacion
-            // 
-            this.puntuacion.HeaderText = "Puntuacion";
-            this.puntuacion.MinimumWidth = 6;
-            this.puntuacion.Name = "puntuacion";
-            this.puntuacion.Width = 125;
             // 
             // comboBox3
             // 
@@ -277,6 +218,85 @@
             this.label10.TabIndex = 21;
             this.label10.Text = "Consultar Cliente";
             // 
+            // Id
+            // 
+            this.Id.HeaderText = "id del cliente";
+            this.Id.MinimumWidth = 6;
+            this.Id.Name = "Id";
+            this.Id.Visible = false;
+            this.Id.Width = 125;
+            // 
+            // cedula
+            // 
+            this.cedula.HeaderText = "Cedula";
+            this.cedula.MinimumWidth = 6;
+            this.cedula.Name = "cedula";
+            this.cedula.Width = 125;
+            // 
+            // nombre
+            // 
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.MinimumWidth = 6;
+            this.nombre.Name = "nombre";
+            this.nombre.Width = 125;
+            // 
+            // Apellido
+            // 
+            this.Apellido.HeaderText = "Apellido";
+            this.Apellido.MinimumWidth = 6;
+            this.Apellido.Name = "Apellido";
+            this.Apellido.Width = 125;
+            // 
+            // FechaNacimiento
+            // 
+            this.FechaNacimiento.HeaderText = "Fecha Nacimiento";
+            this.FechaNacimiento.MinimumWidth = 6;
+            this.FechaNacimiento.Name = "FechaNacimiento";
+            this.FechaNacimiento.Width = 160;
+            // 
+            // genero
+            // 
+            this.genero.HeaderText = "Genero";
+            this.genero.MinimumWidth = 6;
+            this.genero.Name = "genero";
+            this.genero.Width = 125;
+            // 
+            // direccion
+            // 
+            this.direccion.HeaderText = "Direccion";
+            this.direccion.MinimumWidth = 6;
+            this.direccion.Name = "direccion";
+            this.direccion.Width = 125;
+            // 
+            // puntuacion
+            // 
+            this.puntuacion.HeaderText = "Puntuacion";
+            this.puntuacion.MinimumWidth = 6;
+            this.puntuacion.Name = "puntuacion";
+            this.puntuacion.Width = 125;
+            // 
+            // estado
+            // 
+            this.estado.HeaderText = "Estado";
+            this.estado.MinimumWidth = 6;
+            this.estado.Name = "estado";
+            this.estado.Width = 125;
+            // 
+            // Id_Ciudad
+            // 
+            this.Id_Ciudad.HeaderText = "Id De La Ciudad";
+            this.Id_Ciudad.MinimumWidth = 6;
+            this.Id_Ciudad.Name = "Id_Ciudad";
+            this.Id_Ciudad.Visible = false;
+            this.Id_Ciudad.Width = 125;
+            // 
+            // ciudad
+            // 
+            this.ciudad.HeaderText = "Ciudad";
+            this.ciudad.MinimumWidth = 6;
+            this.ciudad.Name = "ciudad";
+            this.ciudad.Width = 125;
+            // 
             // frmConsultarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -285,6 +305,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmConsultarCliente";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmConsultarCliente_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).EndInit();
@@ -296,15 +317,6 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dgvConsulta;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cedula;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn edad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn genero;
-        private System.Windows.Forms.DataGridViewTextBoxColumn direccion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ciudad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn estado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn puntuacion;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBox1;
@@ -316,5 +328,16 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cedula;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaNacimiento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn genero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn direccion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn puntuacion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id_Ciudad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ciudad;
     }
 }
