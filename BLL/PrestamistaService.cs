@@ -22,5 +22,10 @@ namespace BLL
             var msg = repo.ConsultarPrestamista();
             return msg;
         }
+
+        public List<Prestamista> LoginUser(string usuario, string contraseña)
+        {
+            return ConsultarPrestamista().Where(u => u.Usuario == usuario && u.Contraseña == contraseña).ToList();
+        }
     }
 }

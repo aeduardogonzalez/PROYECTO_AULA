@@ -99,5 +99,24 @@ namespace GUI
             cargarGrillaPersonas(clienteService.ConsultarClientes());
             CargarComboPersonas();
         }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            CargarClientesFiltrado();
+        }
+
+        private void CargarClientesFiltrado()
+        {
+            var filtro = txtBuscar.Text;
+            var list = clienteService.BuscarX(filtro);
+            cargarGrillaPersonas(list);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmMenuPrincipal menu = new frmMenuPrincipal();
+            menu.Show();
+            this.Hide();
+        }
     }
 }

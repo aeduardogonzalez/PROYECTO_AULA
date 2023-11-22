@@ -29,5 +29,11 @@ namespace BLL
             var msg = repo.ConsultarClientes();
             return msg;
         }
+
+        public List<Cliente> BuscarX(string x)
+        {
+            return ConsultarClientes().Where(item => item.Cedula == x || item.ciudad.Nombre_Ciudad.Contains(x) || item.Genero.Contains(x)
+                    || item.Estado.Contains(x)).ToList();
+        }
     }
 }

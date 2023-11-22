@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using ENTITY;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,14 +21,43 @@ namespace GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            frmMenuPrincipal menu = new frmMenuPrincipal();
-            menu.Show();
+            Ingresar();
+
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public void Ingresar()
+        {
+            if (txtUsuario.Text != "")
+            {
+                if (txtContraseña.Text != "")
+                {
+                    List<Prestamista> TEST = new PrestamistaService().ConsultarPrestamista();
+                    Prestamista oUsuario = new PrestamistaService().LoginUser(txtUsuario.Text, txtContraseña.Text).FirstOrDefault();
+                    if (oUsuario != null)
+                    {
+                        frmMenuPrincipal Menu = new frmMenuPrincipal();
+                        Menu.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Usuario o contraseña no válido", "login");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Ingrese una contraseña válida", "login");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ingrese un usuario válido", "login");
+            }
         }
 
         private void frmSession_Load(object sender, EventArgs e)
