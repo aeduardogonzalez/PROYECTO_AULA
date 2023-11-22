@@ -56,5 +56,12 @@ namespace GUI
         {
             cargarGrillaPersonas(clienteService.ConsultarClientes());
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmMenuPrincipal menu = new frmMenuPrincipal();
+            menu.Show();
+            this.Hide();
+        }
     }
 }
