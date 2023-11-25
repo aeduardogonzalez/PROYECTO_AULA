@@ -78,7 +78,7 @@
             this.btnAnadirCliente.Font = new System.Drawing.Font("Bell MT", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnadirCliente.ForeColor = System.Drawing.Color.Transparent;
             this.btnAnadirCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAnadirCliente.Location = new System.Drawing.Point(793, 320);
+            this.btnAnadirCliente.Location = new System.Drawing.Point(815, 320);
             this.btnAnadirCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnAnadirCliente.Name = "btnAnadirCliente";
             this.btnAnadirCliente.Size = new System.Drawing.Size(117, 82);
@@ -436,7 +436,7 @@
             this.button2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(968, 320);
+            this.button2.Location = new System.Drawing.Point(954, 320);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(117, 82);
