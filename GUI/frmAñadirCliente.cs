@@ -118,5 +118,74 @@ namespace GUI
             menu.Show();
             this.Hide();
         }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            ModificarBD();
+        }
+
+        private void dgvConsulta_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvConsulta.Columns[e.ColumnIndex].Name == "ModificarDGV")
+            {
+                int index = e.RowIndex;
+                if (index >= 0)
+                {
+                    txtId.Text = dgvConsulta.Rows[index].Cells["Id"].Value.ToString();
+                    txtCedula.Text = dgvConsulta.Rows[index].Cells["Cedula"].Value.ToString();
+                    txtNombre.Text = dgvConsulta.Rows[index].Cells["nombre"].Value.ToString();
+                    txtApellido.Text = dgvConsulta.Rows[index].Cells["Apellido"].Value.ToString();
+                    dtpFechaNacimiento.Text = dgvConsulta.Rows[index].Cells["FechaNacimiento"].Value.ToString();
+                    cboxGenero.Text = dgvConsulta.Rows[index].Cells["genero"].Value.ToString();
+                    txtDireccion.Text = dgvConsulta.Rows[index].Cells["direccion"].Value.ToString();
+                    txtPuntuacion.Text = dgvConsulta.Rows[index].Cells["puntuacion"].Value.ToString();
+                    cboxEstado.Text = dgvConsulta.Rows[index].Cells["estado"].Value.ToString();
+                    cboxCiudad.Text = dgvConsulta.Rows[index].Cells["ciudad"].Value.ToString();
+                }
+            }
+        }
+
+        private void ModificarBD() 
+        {
+            if ((txtId.Text != "") || (txtNombre.Text != "") || (txtApellido.Text != "") || (dtpFechaNacimiento.Text != "")
+                || (cboxGenero.Text != "") || (txtDireccion.Text != "") || (txtPuntuacion.Text != "") || (cboxEstado.Text != "")
+                || (txtIdCiudad.Text != "") || (cboxCiudad.Text != ""))
+                 
+            {
+                Ciudad CiudadIndex = (Ciudad)cboxCiudad.SelectedItem;
+                Cliente cliente = new Cliente
+                {
+                    Cedula = txtCedula.Text,
+                    Nombre = txtNombre.Text,
+                    Apellido = txtApellido.Text,
+                    FechaNacimiento = Convert.ToString(dtpFechaNacimiento.Value.ToString("d")),
+                    Genero = cboxGenero.Text,
+                    Direccion = txtDireccion.Text,
+                    Puntuacion = Convert.ToDecimal(txtPuntuacion.Text),
+                    Estado = cboxEstado.Text,
+                    ciudad = CiudadIndex,
+                    ID = Convert.ToInt32(txtId.Text)
+                };
+                if (cliente == null)
+                {
+                    var msg = clienteService.ActualizarCliente(cliente);
+                    MessageBox.Show(msg, "Gestion de Cliente", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    cargarGrillaPersonas(clienteService.ConsultarClientes());
+                    //Nuevo();
+                    //EnabledUpdate();
+                }
+                else
+                {
+                    var msg = clienteService.ActualizarCliente(cliente);
+                    MessageBox.Show(msg, "Gestion de Cliente", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //Nuevo();
+                    //EnabledUpdate();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Faltan datos por ingresar!", "Gestion de producto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }

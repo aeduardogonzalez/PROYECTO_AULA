@@ -38,6 +38,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtIdCiudad = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.cboxGenero = new System.Windows.Forms.ComboBox();
@@ -53,6 +55,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvConsulta = new System.Windows.Forms.DataGridView();
+            this.ModificarDGV = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,6 +68,8 @@
             this.Id_Ciudad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ciudad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).BeginInit();
@@ -94,7 +99,7 @@
             "Inactivo",
             "Reportado",
             "En mora"});
-            this.cboxEstado.Location = new System.Drawing.Point(876, 264);
+            this.cboxEstado.Location = new System.Drawing.Point(893, 193);
             this.cboxEstado.Margin = new System.Windows.Forms.Padding(4);
             this.cboxEstado.Name = "cboxEstado";
             this.cboxEstado.Size = new System.Drawing.Size(195, 24);
@@ -102,7 +107,7 @@
             // 
             // txtPuntuacion
             // 
-            this.txtPuntuacion.Location = new System.Drawing.Point(909, 181);
+            this.txtPuntuacion.Location = new System.Drawing.Point(926, 147);
             this.txtPuntuacion.Margin = new System.Windows.Forms.Padding(4);
             this.txtPuntuacion.Name = "txtPuntuacion";
             this.txtPuntuacion.Size = new System.Drawing.Size(195, 22);
@@ -110,7 +115,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(890, 105);
+            this.txtNombre.Location = new System.Drawing.Point(907, 102);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(195, 22);
@@ -120,7 +125,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Bell MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(793, 264);
+            this.label9.Location = new System.Drawing.Point(810, 193);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(81, 27);
@@ -131,7 +136,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Bell MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(793, 181);
+            this.label7.Location = new System.Drawing.Point(810, 147);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(112, 27);
@@ -142,7 +147,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bell MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(793, 102);
+            this.label1.Location = new System.Drawing.Point(810, 99);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 27);
@@ -163,6 +168,7 @@
             // 
             this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.txtBuscar);
             this.groupBox1.Controls.Add(this.dtpFechaNacimiento);
             this.groupBox1.Controls.Add(this.cboxGenero);
@@ -186,9 +192,25 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
+            // txtIdCiudad
+            // 
+            this.txtIdCiudad.Location = new System.Drawing.Point(1106, 12);
+            this.txtIdCiudad.Name = "txtIdCiudad";
+            this.txtIdCiudad.Size = new System.Drawing.Size(100, 22);
+            this.txtIdCiudad.TabIndex = 28;
+            this.txtIdCiudad.Visible = false;
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(988, 12);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(100, 22);
+            this.txtId.TabIndex = 27;
+            this.txtId.Visible = false;
+            // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(547, 390);
+            this.txtBuscar.Location = new System.Drawing.Point(338, 368);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(100, 22);
             this.txtBuscar.TabIndex = 26;
@@ -197,7 +219,7 @@
             // dtpFechaNacimiento
             // 
             this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaNacimiento.Location = new System.Drawing.Point(547, 103);
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(625, 101);
             this.dtpFechaNacimiento.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(195, 22);
@@ -209,7 +231,7 @@
             this.cboxGenero.Items.AddRange(new object[] {
             "Masculino",
             "Femenino"});
-            this.cboxGenero.Location = new System.Drawing.Point(547, 263);
+            this.cboxGenero.Location = new System.Drawing.Point(485, 197);
             this.cboxGenero.Margin = new System.Windows.Forms.Padding(4);
             this.cboxGenero.Name = "cboxGenero";
             this.cboxGenero.Size = new System.Drawing.Size(195, 24);
@@ -218,7 +240,7 @@
             // cboxCiudad
             // 
             this.cboxCiudad.FormattingEnabled = true;
-            this.cboxCiudad.Location = new System.Drawing.Point(475, 184);
+            this.cboxCiudad.Location = new System.Drawing.Point(482, 150);
             this.cboxCiudad.Margin = new System.Windows.Forms.Padding(4);
             this.cboxCiudad.Name = "cboxCiudad";
             this.cboxCiudad.Size = new System.Drawing.Size(195, 24);
@@ -239,7 +261,7 @@
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(147, 268);
+            this.txtDireccion.Location = new System.Drawing.Point(147, 202);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(195, 22);
@@ -247,7 +269,7 @@
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(133, 185);
+            this.txtApellido.Location = new System.Drawing.Point(133, 151);
             this.txtApellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(195, 22);
@@ -265,7 +287,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Bell MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(459, 263);
+            this.label8.Location = new System.Drawing.Point(397, 197);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(86, 27);
@@ -276,7 +298,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Bell MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(319, 101);
+            this.label6.Location = new System.Drawing.Point(397, 99);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(218, 27);
@@ -288,7 +310,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Bell MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(35, 268);
+            this.label5.Location = new System.Drawing.Point(35, 202);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 27);
@@ -299,7 +321,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Bell MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(390, 180);
+            this.label4.Location = new System.Drawing.Point(397, 146);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 27);
@@ -310,7 +332,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bell MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(35, 185);
+            this.label3.Location = new System.Drawing.Point(35, 151);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(95, 27);
@@ -332,6 +354,7 @@
             // 
             this.dgvConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsulta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ModificarDGV,
             this.Id,
             this.cedula,
             this.nombre,
@@ -349,6 +372,14 @@
             this.dgvConsulta.RowHeadersWidth = 51;
             this.dgvConsulta.Size = new System.Drawing.Size(1179, 281);
             this.dgvConsulta.TabIndex = 33;
+            this.dgvConsulta.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvConsulta_CellContentClick);
+            // 
+            // ModificarDGV
+            // 
+            this.ModificarDGV.HeaderText = "";
+            this.ModificarDGV.MinimumWidth = 6;
+            this.ModificarDGV.Name = "ModificarDGV";
+            this.ModificarDGV.Width = 125;
             // 
             // Id
             // 
@@ -436,7 +467,7 @@
             this.button2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(954, 320);
+            this.button2.Location = new System.Drawing.Point(1075, 320);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(117, 82);
@@ -445,12 +476,43 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // btnModificar
+            // 
+            this.btnModificar.BackColor = System.Drawing.Color.White;
+            this.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnModificar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.Color.Black;
+            this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnModificar.Location = new System.Drawing.Point(946, 320);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(117, 82);
+            this.btnModificar.TabIndex = 36;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Bell MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(37, 292);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(744, 54);
+            this.label11.TabIndex = 29;
+            this.label11.Text = "Por favor digite en el cuadro de texto el campo por el que quiere consultar,\r\nLo " +
+    "puede hacer Con la cédula, el género, la ciudad y el estado del cliente";
+            // 
             // frmAñadirCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1215, 707);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.txtIdCiudad);
             this.Controls.Add(this.button2);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.btnAnadirCliente);
             this.Controls.Add(this.dgvConsulta);
             this.Controls.Add(this.panel1);
@@ -497,6 +559,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dgvConsulta;
+        private System.Windows.Forms.TextBox txtBuscar;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtIdCiudad;
+        private System.Windows.Forms.DataGridViewButtonColumn ModificarDGV;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn cedula;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
@@ -508,7 +576,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn estado;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id_Ciudad;
         private System.Windows.Forms.DataGridViewTextBoxColumn ciudad;
-        private System.Windows.Forms.TextBox txtBuscar;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label11;
     }
 }

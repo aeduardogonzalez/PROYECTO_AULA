@@ -34,16 +34,17 @@ namespace DAL
             CerrarConexion();
             if (i >= 1)
             {
-                return $"se haregistrado el cliente --> {cliente.Nombre} ";
+                return $"se ha registrado el cliente --> {cliente.Nombre} ";
             }
             return "datos invalidos de el cliente";
         }
 
         public string ActualizarCliente(Cliente cliente)
         {
-            string ssql = $"UPDATE [dbo].[CLIENTES] SET Cedula='{cliente.Cedula}',Nombre='{cliente.Nombre}',Apellido='{cliente.Apellido}'," +
-                $"FechaNacimiento='{cliente.FechaNacimiento}',Genero='{cliente.Genero}', Direccion='{cliente.Direccion}',  Puntuacion='{cliente.Puntuacion}'," +
-                $"Estado='{cliente.Estado}',Id_Ciudad='{cliente.ciudad.Id_Ciudad}' WHERE ID='{cliente.ID}'";
+            string ssql = $"UPDATE[dbo].[CLIENTES] SET Cedula = '{cliente.Cedula}', Nombre = '{cliente.Nombre}', Apellido = '{cliente.Apellido}'," +
+                $"FechaNacimiento = '{cliente.FechaNacimiento}', Genero = '{cliente.Genero}', Direccion = '{cliente.Direccion}', Puntuacion = '{cliente.Puntuacion}'," +
+                $"Estado = '{cliente.Estado}', Id_Ciudad = '{cliente.ciudad.Id_Ciudad}', Nombre_Ciudad = '{cliente.ciudad.Nombre_Ciudad}' WHERE ID = '{cliente.ID}'";
+
             SqlCommand cmd = new SqlCommand(ssql, conexion);
             AbrirConexion();
             var i = cmd.ExecuteNonQuery();

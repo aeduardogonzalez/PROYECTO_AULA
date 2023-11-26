@@ -3,7 +3,6 @@ C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\CLON PROYECTO DE AULA\PROYECTO_AULA
 C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\CLON PROYECTO DE AULA\PROYECTO_AULA\GUI\bin\Debug\GUI.pdb
 C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\CLON PROYECTO DE AULA\PROYECTO_AULA\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
 C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\CLON PROYECTO DE AULA\PROYECTO_AULA\GUI\obj\Debug\GUI.frmAñadirCliente.resources
-C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\CLON PROYECTO DE AULA\PROYECTO_AULA\GUI\obj\Debug\GUI.frmConsultarCliente.resources
 C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\CLON PROYECTO DE AULA\PROYECTO_AULA\GUI\obj\Debug\GUI.frmMenuPrincipal.resources
 C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\CLON PROYECTO DE AULA\PROYECTO_AULA\GUI\obj\Debug\GUI.Properties.Resources.resources
 C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\CLON PROYECTO DE AULA\PROYECTO_AULA\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
@@ -27,7 +26,7 @@ C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\CLON PROYECTO DE AULA\PROYECTO_AULA
 C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\CLON PROYECTO DE AULA\PROYECTO_AULA\GUI\bin\Debug\BLL.pdb
 C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\CLON PROYECTO DE AULA\PROYECTO_AULA\GUI\bin\Debug\ENTITY.pdb
 C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\CLON PROYECTO DE AULA\PROYECTO_AULA\GUI\bin\Debug\DAL.pdb
-C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\CLON PROYECTO DE AULA\PROYECTO_AULA\GUI\obj\Debug\GUI.frmModificarCliente.resources
 C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\CLON PROYECTO DE AULA\PROYECTO_AULA\GUI\obj\Debug\GUI.frmRegistrarse.resources
 C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\CLON PROYECTO DE AULA\PROYECTO_AULA\GUI\obj\Debug\GUI.frmSesion.resources
 C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\CLON PROYECTO DE AULA\PROYECTO_AULA\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\CLON PROYECTO DE AULA\PROYECTO_AULA\GUI\bin\Debug\RJCodeAdvance.RJControls.dll
