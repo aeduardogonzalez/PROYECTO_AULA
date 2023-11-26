@@ -79,7 +79,6 @@ namespace GUI
             cboxCiudad.ValueMember = "Id_Ciudad";
             cboxCiudad.SelectedIndex = -1;
             cboxCiudad.DropDownStyle = ComboBoxStyle.DropDownList;
-
         }
 
 

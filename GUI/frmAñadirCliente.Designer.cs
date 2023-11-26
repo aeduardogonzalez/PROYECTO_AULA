@@ -210,7 +210,7 @@
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(338, 368);
+            this.txtBuscar.Location = new System.Drawing.Point(340, 368);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(100, 22);
             this.txtBuscar.TabIndex = 26;
@@ -301,9 +301,9 @@
             this.label6.Location = new System.Drawing.Point(397, 99);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(218, 27);
+            this.label6.Size = new System.Drawing.Size(245, 27);
             this.label6.TabIndex = 7;
-            this.label6.Text = "Fecha de Nacimiento";
+            this.label6.Text = "Fecha deew Nacimiento";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
