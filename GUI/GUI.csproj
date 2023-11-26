@@ -95,6 +95,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -119,6 +120,18 @@
       <Project>{32166644-83ec-4383-934f-8d091a30ebe5}</Project>
       <Name>ENTITY</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagenes\avance-rapido.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagenes\fondo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagenes\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagenes\cerrar-sesion.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
