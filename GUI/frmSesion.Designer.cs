@@ -35,7 +35,6 @@
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnCrearSesion = new System.Windows.Forms.Button();
             this.btnIniciarSesion = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,7 +50,6 @@
             this.groupBox1.Controls.Add(this.txtContraseña);
             this.groupBox1.Controls.Add(this.txtUsuario);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.btnCrearSesion);
             this.groupBox1.Controls.Add(this.btnIniciarSesion);
             this.groupBox1.Location = new System.Drawing.Point(3, 5);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
@@ -66,7 +64,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Bell MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(14, 89);
+            this.label1.Location = new System.Drawing.Point(4, 44);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 27);
@@ -77,17 +75,17 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(18, 15);
+            this.pictureBox1.Location = new System.Drawing.Point(162, 17);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(142, 72);
+            this.pictureBox1.Size = new System.Drawing.Size(175, 99);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(18, 167);
+            this.txtContraseña.Location = new System.Drawing.Point(4, 140);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(2);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
@@ -96,7 +94,7 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(18, 112);
+            this.txtUsuario.Location = new System.Drawing.Point(4, 73);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(143, 20);
@@ -107,27 +105,12 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Bell MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(14, 143);
+            this.label2.Location = new System.Drawing.Point(4, 107);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(126, 27);
             this.label2.TabIndex = 3;
             this.label2.Text = "Contraseña";
-            // 
-            // btnCrearSesion
-            // 
-            this.btnCrearSesion.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCrearSesion.Font = new System.Drawing.Font("Bell MT", 18.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearSesion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCrearSesion.Image = ((System.Drawing.Image)(resources.GetObject("btnCrearSesion.Image")));
-            this.btnCrearSesion.Location = new System.Drawing.Point(188, 130);
-            this.btnCrearSesion.Margin = new System.Windows.Forms.Padding(2);
-            this.btnCrearSesion.Name = "btnCrearSesion";
-            this.btnCrearSesion.Size = new System.Drawing.Size(151, 47);
-            this.btnCrearSesion.TabIndex = 1;
-            this.btnCrearSesion.Text = "Registrarse";
-            this.btnCrearSesion.UseVisualStyleBackColor = false;
-            this.btnCrearSesion.Click += new System.EventHandler(this.btnCrearSesion_Click);
             // 
             // btnIniciarSesion
             // 
@@ -135,7 +118,7 @@
             this.btnIniciarSesion.Font = new System.Drawing.Font("Bell MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciarSesion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnIniciarSesion.Image = ((System.Drawing.Image)(resources.GetObject("btnIniciarSesion.Image")));
-            this.btnIniciarSesion.Location = new System.Drawing.Point(188, 40);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(173, 123);
             this.btnIniciarSesion.Margin = new System.Windows.Forms.Padding(2);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
             this.btnIniciarSesion.Size = new System.Drawing.Size(151, 47);
@@ -151,7 +134,7 @@
             this.ClientSize = new System.Drawing.Size(376, 206);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmSesion";
             this.Text = "CrediXpert";
             this.Load += new System.EventHandler(this.frmSession_Load);
@@ -165,7 +148,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnIniciarSesion;
-        private System.Windows.Forms.Button btnCrearSesion;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtContraseña;
