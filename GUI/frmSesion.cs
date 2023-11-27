@@ -72,5 +72,38 @@ namespace GUI
             frmRegistrarse registro = new frmRegistrarse();
             registro.Show();
         }
+
+        private void txtContraseña_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                if (txtUsuario.Text != "")
+                {
+                    if (txtContraseña.Text != "")
+                    {
+                        List<Prestamista> TEST = new PrestamistaService().ConsultarPrestamista();
+                        Prestamista oUsuario = new PrestamistaService().LoginUser(txtUsuario.Text, txtContraseña.Text).FirstOrDefault();
+                        if (oUsuario != null)
+                        {
+                            frmMenuPrincipal Menu = new frmMenuPrincipal();
+                            Menu.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Usuario o contraseña no válido", "login");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ingrese una contraseña válida", "login");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Ingrese un usuario válido", "login");
+                }
+            }
+        }
     }
 }

@@ -64,10 +64,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Bell MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 44);
+            this.label1.Location = new System.Drawing.Point(4, 34);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 27);
+            this.label1.Size = new System.Drawing.Size(113, 34);
             this.label1.TabIndex = 7;
             this.label1.Text = "Usuario";
             // 
@@ -89,15 +89,16 @@
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(2);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.Size = new System.Drawing.Size(143, 20);
+            this.txtContraseña.Size = new System.Drawing.Size(143, 23);
             this.txtContraseña.TabIndex = 5;
+            this.txtContraseña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContraseña_KeyPress);
             // 
             // txtUsuario
             // 
             this.txtUsuario.Location = new System.Drawing.Point(4, 73);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(143, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(143, 23);
             this.txtUsuario.TabIndex = 4;
             // 
             // label2
@@ -105,10 +106,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Bell MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 107);
+            this.label2.Location = new System.Drawing.Point(4, 103);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 27);
+            this.label2.Size = new System.Drawing.Size(154, 34);
             this.label2.TabIndex = 3;
             this.label2.Text = "Contraseña";
             // 
@@ -129,7 +130,7 @@
             // 
             // frmSesion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(376, 206);
             this.Controls.Add(this.groupBox1);

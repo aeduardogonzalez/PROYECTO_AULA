@@ -29,3 +29,12 @@ C:\Users\JJCO10\Documents\UPC\SEMESTRE_4\PROGRAMACION 3\C#\PROYECTO_AULA\PROYECT
 C:\Users\JJCO10\Documents\UPC\SEMESTRE_4\PROGRAMACION 3\C#\PROYECTO_AULA\PROYECTO_AULA\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\JJCO10\Documents\UPC\SEMESTRE_4\PROGRAMACION 3\C#\PROYECTO_AULA\PROYECTO_AULA\DAL\obj\Debug\DAL.dll
 C:\Users\JJCO10\Documents\UPC\SEMESTRE_4\PROGRAMACION 3\C#\PROYECTO_AULA\PROYECTO_AULA\DAL\obj\Debug\DAL.pdb
+C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\Cloncito\PROYECTO_AULA\DAL\bin\Debug\DAL.dll
+C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\Cloncito\PROYECTO_AULA\DAL\bin\Debug\DAL.pdb
+C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\Cloncito\PROYECTO_AULA\DAL\bin\Debug\ENTITY.dll
+C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\Cloncito\PROYECTO_AULA\DAL\bin\Debug\ENTITY.pdb
+C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\Cloncito\PROYECTO_AULA\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\Cloncito\PROYECTO_AULA\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\Cloncito\PROYECTO_AULA\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\Cloncito\PROYECTO_AULA\DAL\obj\Debug\DAL.dll
+C:\Users\ANDRES GONZALEZ\OneDrive\Escritorio\Cloncito\PROYECTO_AULA\DAL\obj\Debug\DAL.pdb
