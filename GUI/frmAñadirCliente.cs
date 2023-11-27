@@ -115,7 +115,8 @@ namespace GUI
         {
             frmMenuPrincipal menu = new frmMenuPrincipal();
             menu.Show();
-            this.Hide();
+            this.Close();
+
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -170,15 +171,11 @@ namespace GUI
                     var msg = clienteService.ActualizarCliente(cliente);
                     MessageBox.Show(msg, "Gestion de Cliente", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     cargarGrillaPersonas(clienteService.ConsultarClientes());
-                    //Nuevo();
-                    //EnabledUpdate();
                 }
                 else
                 {
                     var msg = clienteService.ActualizarCliente(cliente);
                     MessageBox.Show(msg, "Gestion de Cliente", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    //Nuevo();
-                    //EnabledUpdate();
                 }
             }
             else

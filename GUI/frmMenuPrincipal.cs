@@ -45,6 +45,8 @@ namespace GUI
         private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
+            frmSesion _frmSesion = new frmSesion();
+            _frmSesion.Show();
+        }   
     }
 }

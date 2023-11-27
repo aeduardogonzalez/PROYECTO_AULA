@@ -105,9 +105,9 @@
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.dgvConsulta);
             this.groupBox1.Location = new System.Drawing.Point(4, 2);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1215, 708);
             this.groupBox1.TabIndex = 37;
             this.groupBox1.TabStop = false;
@@ -115,7 +115,7 @@
             // txtCedula
             // 
             this.txtCedula.Location = new System.Drawing.Point(137, 108);
-            this.txtCedula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCedula.Margin = new System.Windows.Forms.Padding(4);
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(195, 22);
             this.txtCedula.TabIndex = 11;
@@ -166,7 +166,7 @@
             this.btnModificar.ForeColor = System.Drawing.Color.Black;
             this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnModificar.Location = new System.Drawing.Point(943, 318);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(117, 82);
             this.btnModificar.TabIndex = 36;
@@ -198,7 +198,7 @@
             // txtApellido
             // 
             this.txtApellido.Location = new System.Drawing.Point(137, 154);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(195, 22);
             this.txtApellido.TabIndex = 13;
@@ -206,7 +206,7 @@
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(519, 154);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(195, 22);
             this.txtDireccion.TabIndex = 15;
@@ -227,7 +227,7 @@
             "Masculino",
             "Femenino"});
             this.cboxGenero.Location = new System.Drawing.Point(903, 203);
-            this.cboxGenero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboxGenero.Margin = new System.Windows.Forms.Padding(4);
             this.cboxGenero.Name = "cboxGenero";
             this.cboxGenero.Size = new System.Drawing.Size(195, 24);
             this.cboxGenero.TabIndex = 22;
@@ -236,7 +236,7 @@
             // 
             this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFechaNacimiento.Location = new System.Drawing.Point(519, 111);
-            this.dtpFechaNacimiento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFechaNacimiento.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(195, 22);
             this.dtpFechaNacimiento.TabIndex = 25;
@@ -257,7 +257,7 @@
             // 
             this.cboxCiudad.FormattingEnabled = true;
             this.cboxCiudad.Location = new System.Drawing.Point(899, 155);
-            this.cboxCiudad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboxCiudad.Margin = new System.Windows.Forms.Padding(4);
             this.cboxCiudad.Name = "cboxCiudad";
             this.cboxCiudad.Size = new System.Drawing.Size(195, 24);
             this.cboxCiudad.TabIndex = 21;
@@ -271,7 +271,7 @@
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.Location = new System.Drawing.Point(1071, 318);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(117, 82);
             this.button2.TabIndex = 35;
@@ -308,7 +308,7 @@
             this.btnAnadirCliente.ForeColor = System.Drawing.Color.Transparent;
             this.btnAnadirCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAnadirCliente.Location = new System.Drawing.Point(811, 318);
-            this.btnAnadirCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAnadirCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnAnadirCliente.Name = "btnAnadirCliente";
             this.btnAnadirCliente.Size = new System.Drawing.Size(117, 82);
             this.btnAnadirCliente.TabIndex = 24;
@@ -336,7 +336,7 @@
             "Reportado",
             "En mora"});
             this.cboxEstado.Location = new System.Drawing.Point(899, 114);
-            this.cboxEstado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboxEstado.Margin = new System.Windows.Forms.Padding(4);
             this.cboxEstado.Name = "cboxEstado";
             this.cboxEstado.Size = new System.Drawing.Size(195, 24);
             this.cboxEstado.TabIndex = 23;
@@ -369,7 +369,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(137, 203);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(195, 22);
             this.txtNombre.TabIndex = 12;
@@ -389,7 +389,7 @@
             // txtPuntuacion
             // 
             this.txtPuntuacion.Location = new System.Drawing.Point(519, 204);
-            this.txtPuntuacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPuntuacion.Margin = new System.Windows.Forms.Padding(4);
             this.txtPuntuacion.Name = "txtPuntuacion";
             this.txtPuntuacion.Size = new System.Drawing.Size(195, 22);
             this.txtPuntuacion.TabIndex = 17;
@@ -423,7 +423,7 @@
             this.Id_Ciudad,
             this.ciudad});
             this.dgvConsulta.Location = new System.Drawing.Point(9, 417);
-            this.dgvConsulta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvConsulta.Margin = new System.Windows.Forms.Padding(4);
             this.dgvConsulta.Name = "dgvConsulta";
             this.dgvConsulta.RowHeadersWidth = 51;
             this.dgvConsulta.Size = new System.Drawing.Size(1179, 281);
@@ -522,8 +522,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1215, 706);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAñadirCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CrediXpert";
             this.Load += new System.EventHandler(this.frmAñadirCliente_Load);
             this.groupBox1.ResumeLayout(false);

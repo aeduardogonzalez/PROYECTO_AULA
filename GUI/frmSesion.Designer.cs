@@ -51,11 +51,11 @@
             this.groupBox1.Controls.Add(this.txtUsuario);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.btnIniciarSesion);
-            this.groupBox1.Location = new System.Drawing.Point(3, 5);
+            this.groupBox1.Location = new System.Drawing.Point(3, -7);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(364, 193);
+            this.groupBox1.Size = new System.Drawing.Size(785, 405);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             // 
@@ -64,7 +64,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Bell MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 34);
+            this.label1.Location = new System.Drawing.Point(79, 127);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 34);
@@ -75,30 +75,30 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(162, 17);
+            this.pictureBox1.Location = new System.Drawing.Point(434, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(175, 99);
+            this.pictureBox1.Size = new System.Drawing.Size(331, 228);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(4, 140);
+            this.txtContraseña.Location = new System.Drawing.Point(79, 233);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(2);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.Size = new System.Drawing.Size(143, 23);
+            this.txtContraseña.Size = new System.Drawing.Size(226, 23);
             this.txtContraseña.TabIndex = 5;
             this.txtContraseña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContraseña_KeyPress);
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(4, 73);
+            this.txtUsuario.Location = new System.Drawing.Point(79, 166);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(143, 23);
+            this.txtUsuario.Size = new System.Drawing.Size(226, 23);
             this.txtUsuario.TabIndex = 4;
             // 
             // label2
@@ -106,7 +106,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Bell MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 101);
+            this.label2.Location = new System.Drawing.Point(79, 194);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(154, 34);
@@ -119,10 +119,10 @@
             this.btnIniciarSesion.Font = new System.Drawing.Font("Bell MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciarSesion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnIniciarSesion.Image = ((System.Drawing.Image)(resources.GetObject("btnIniciarSesion.Image")));
-            this.btnIniciarSesion.Location = new System.Drawing.Point(173, 123);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(484, 244);
             this.btnIniciarSesion.Margin = new System.Windows.Forms.Padding(2);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
-            this.btnIniciarSesion.Size = new System.Drawing.Size(151, 47);
+            this.btnIniciarSesion.Size = new System.Drawing.Size(229, 52);
             this.btnIniciarSesion.TabIndex = 0;
             this.btnIniciarSesion.Text = "Iniciar Sesion";
             this.btnIniciarSesion.UseVisualStyleBackColor = false;
@@ -132,11 +132,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(376, 206);
+            this.ClientSize = new System.Drawing.Size(768, 393);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmSesion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CrediXpert";
             this.Load += new System.EventHandler(this.frmSession_Load);
             this.groupBox1.ResumeLayout(false);
