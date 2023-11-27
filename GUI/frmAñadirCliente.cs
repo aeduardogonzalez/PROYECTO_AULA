@@ -107,7 +107,7 @@ namespace GUI
         private void CargarClientesFiltrado()
         {
             var filtro = txtBuscar.Text;
-            var list = clienteService.BuscarX(filtro);
+            var list = clienteService.BuscarFiltrado(filtro);
             cargarGrillaPersonas(list);
         }
 
