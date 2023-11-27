@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
@@ -33,7 +34,7 @@ namespace BLL
         public List<Cliente> BuscarFiltrado(string x)
         {
             return ConsultarClientes().Where(item => item.Cedula == x || item.ciudad.Nombre_Ciudad.Contains(x) || item.Genero.Contains(x)
-                    || item.Estado.Contains(x)).ToList();
+                    || item.Estado.Contains(x) || (item.FechaNacimiento.Contains(x))).ToList();
         }
     }
 }

@@ -125,13 +125,14 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Bell MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(4, 284);
+            this.label11.Location = new System.Drawing.Point(29, 264);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(744, 54);
+            this.label11.Size = new System.Drawing.Size(744, 81);
             this.label11.TabIndex = 29;
             this.label11.Text = "Por favor digite en el cuadro de texto el campo por el que quiere consultar,\r\nLo " +
-    "puede hacer Con la cédula, el género, la ciudad y el estado del cliente";
+    "puede hacer Con la cédula, el género, la ciudad, el estado y la Fecha\r\nDe nacimi" +
+    "ento del cliente";
             // 
             // label2
             // 
@@ -235,7 +236,7 @@
             // dtpFechaNacimiento
             // 
             this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaNacimiento.Location = new System.Drawing.Point(519, 111);
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(589, 119);
             this.dtpFechaNacimiento.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(195, 22);
@@ -346,12 +347,12 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Bell MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(444, 108);
+            this.label6.Location = new System.Drawing.Point(397, 114);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 27);
+            this.label6.Size = new System.Drawing.Size(184, 27);
             this.label6.TabIndex = 7;
-            this.label6.Text = "Edad";
+            this.label6.Text = "FechaNacimiento";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label1
